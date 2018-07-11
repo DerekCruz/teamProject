@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Login Page 
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <P>Login here below</P>
+
+  <ion-item>
+    <ion-label color ="primary" stacked >Name</ion-label>
+     <ion-input type="text"></ion-input>
+  </ion-item>
+  
+  <ion-item>
+    <ion-label color ="primary" stacked>Password</ion-label>
+    <ion-input type="password"></ion-input>
+  </ion-item>
+  <ion-card-content>
+  <button [navPush]="messageBoardPage">Login </button>
+  </ion-card-content>
+  
+</ion-content>
