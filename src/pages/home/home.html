@@ -7,11 +7,11 @@
 </ion-header>
 
 <ion-content padding>
-  <P>Login here below</P>
+  <h2>Zoom</h2>
 
   <ion-item>
-    <ion-label color ="primary" stacked >Name</ion-label>
-     <ion-input type="text"></ion-input>
+  <ion-label color="primary" stacked >Name</ion-label>
+  <ion-input type="text"></ion-input>
   </ion-item>
   
   <ion-item>
@@ -20,6 +20,7 @@
   </ion-item>
   <ion-card-content>
   <button [navPush]="messageBoardPage">Login </button>
+  <button [navPush]= "signUpPage"> Sign up </button>
   </ion-card-content>
   
 </ion-content>
