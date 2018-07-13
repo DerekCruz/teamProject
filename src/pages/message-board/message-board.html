@@ -7,27 +7,27 @@
 <ion-header>
 
   <ion-navbar color="primary">
-    <ion-title>Message Board
-    </ion-title>
-    <ion-buttons end >
-          <img alt="Plus Icon" 
-          height= "30"
-          width="30"
-          src="../../assets/imgs/Frame 8.png">
-    </ion-buttons>
-  
+    <ion-title>Message Board</ion-title>
   </ion-navbar>
+  <ion-buttons end >
+      <img (click)="changePage()" 
+      height= "30"
+      width="30"
+      src="../../assets/imgs/Frame 8.png">
+  </ion-button>
 </ion-header>
+
+</ion-button>
 <ion-content padding>
 
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+ <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
 <ion-list>
-  <div class="w3-container">
+    <div class="w3-container">
     
-<h3>John Doe </h3>
- <p>Problem: can't be able to make plans for his team. </p>
-</div>
+     <h3>John Doe </h3>
+     <p>Problem: can't be able to make plans for his team. </p>
+    </div>
 <div Class ="w3-container">
 <h3>Connor jack </h3>
 <p>Problem : Can't be able to make design.</p>
@@ -39,15 +39,14 @@
 
 </ion-list>
 
-
-
   <button [navPush]="coachesInfoPage">look in the Coaches info. </button>
  
 </ion-content>
 
 <ion-footer>
+
     <ion-navbar color="primary">
-      <ion-title>
-      </ion-title>
+      <ion-title> </ion-title>
     </ion-navbar>
+
     </ion-footer>
