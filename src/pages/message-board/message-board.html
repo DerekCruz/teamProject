@@ -7,21 +7,33 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>messageBoard</ion-title>
+    <ion-title>Message Board</ion-title>
   </ion-navbar>
 
 </ion-header>
 <ion-content padding>
-  
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
-<ion-list>
-<p class="double">John doe 
-  Problem: Doesn't know how to make plans
-</p>
-<p class ="double">Chad Rami</p>         
-</ion-list>
+ <ion-list>
+    <div class="w3-container "> 
+        <h3>John doe </h3>
+        <p>Problem : can't be able to make plans for his teams</p>
+        <hr>
+    </div>
+      <div class="w3-container " >
+        <h3>Connor Jack</h3>
+        <p>
+          Problem : can't be able to make designs
+        </p>
+      </div>    
+      <div class ="w3-container">
+        <h3>chad Romi </h3>
+        <p> I can't open my Ionic app </p>
+      </div>
+      
+ </ion-list>
   <button [navPush]="coachesInfoPage">look in the Coaches info. </button>
-
+ 
 </ion-content>
 
 
