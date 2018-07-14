@@ -1,63 +1,74 @@
-<!--
-  Generated template for the MessageBoardPage page.
-
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
 <ion-header>
 
-  <ion-navbar color="primary">
+  <ion-navbar hideBackButton color="primary">
+
     <ion-title>Message Board</ion-title>
-    <ion-buttons end >
-        <button class="button" (click)="changePages()">
-            <img
-            height= "30"
-            width="30"
-            src="../../assets/imgs/Frame 8.png">
-        </button>
-       </ion-buttons>
+    <!-- Folder Button -->
+    <ion-buttons start>
+      <button class="button" (click)="goToSavedProblems()">
+        <img height="30" width="30" src="../../assets/icon/Folder.png">
+      </button>
+    </ion-buttons>
+    <!-- Plus Button -->
+    <ion-buttons end>
+      <button class="button" (click)="changePages()">
+        <img height="30" width="30" src="../../assets/imgs/Frame 8.png">
+      </button>
+    </ion-buttons>
   </ion-navbar>
-  
+
 </ion-header>
 
+<!-- List Of Problems -->
+<ion-content padding>
+  <div class="mainContainer">
+    <div class="userInfoContainer">
+      <img class="userAvatar" src="../../assets/imgs/Jon.png">
+      <p>John Doe</p>
 
-<ion-content padding> 
-   
- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    </div>
 
-<ion-list>
-    <button class="back" (click)="changePage()" >
+    <div class="problemContainer">
+      <h4>Problem</h4>
+      <p> I dont know how to add a page on ionic</p>
+    </div>
+
+  </div>
+
+  <!-- Link for W3Schools CSS 
+   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+
+  <!-- <button class="back" (click)="changePage()">
     <div class="w3-container">
-    
-     <h3>John Doe </h3>
-     <p>Problem: can't be able to put a picture in ionic. </p>
+
+      <h3>John Doe </h3>
+      <p>Problem: can't be able to put a picture in ionic. </p>
+    </div>
+   </button> 
+
+  <button class="back" (click)="changePage()">
+    <div class="w3-container">
+      <h3>Connor jack </h3>
+      <p>Problem : Can't be able to make design.</p>
     </div>
   </button>
 
   <button class="back" (click)="changePage()">
-<div Class ="w3-container">
-<h3>Connor jack </h3>
-<p>Problem : Can't be able to make design.</p>
-</div>  
-</button>
+    <div class="w3-container">
+      <h3>Chad Rami</h3>
+      <P>Having trouble making plans for my team .</P>
+    </div>
+  </button> -->
 
-<button class="back" (click)="changePage()">
-<div class="w3-container">
-  <h3>Chad Rami</h3>
-  <P>Having trouble making plans for my team .</P>
-</div>
-</button>
 
-</ion-list>
 
- 
- 
+
 </ion-content>
 
 <ion-footer>
 
-    <ion-navbar color="primary">
-      <ion-title> </ion-title>
-    </ion-navbar>
+  <ion-navbar color="primary">
+    <ion-title> </ion-title>
+  </ion-navbar>
 
-    </ion-footer>
+</ion-footer>
