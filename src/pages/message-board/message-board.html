@@ -9,7 +9,7 @@
   <ion-navbar color="primary">
     <ion-title>Message Board</ion-title>
     <ion-buttons end >
-        <button class="button" (click)="changePage()">
+        <button class="button" (click)="changePages()">
             <img
             height= "30"
             width="30"
@@ -21,28 +21,36 @@
 </ion-header>
 
 
-<ion-content padding>
+<ion-content padding> 
    
  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
 <ion-list>
+    <button class="back" (click)="changePage()" >
     <div class="w3-container">
     
      <h3>John Doe </h3>
-     <p>Problem: can't be able to make plans for his team. </p>
+     <p>Problem: can't be able to put a picture in ionic. </p>
     </div>
+  </button>
+
+  <button class="back" (click)="changePage()">
 <div Class ="w3-container">
 <h3>Connor jack </h3>
 <p>Problem : Can't be able to make design.</p>
 </div>  
+</button>
+
+<button class="back" (click)="changePage()">
 <div class="w3-container">
   <h3>Chad Rami</h3>
-  <P>Having trouble putting a pciture in ionic.</P>
+  <P>Having trouble making plans for my team .</P>
 </div>
+</button>
 
 </ion-list>
 
-  <button [navPush]="coachesInfoPage">look in the Coaches info. </button>
+ 
  
 </ion-content>
 

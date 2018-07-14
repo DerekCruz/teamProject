@@ -20,9 +20,13 @@ export class MessageBoardPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
-   changePage(){
+   changePages(){
      this.navCtrl.push(MethodLearningPage);
    }
+   changePage(){
+     this.navCtrl.push(CoachesInfoPage);
+   }
+  
   ionViewDidLoad() {
     console.log('ionViewDidLoad MessageBoardPage');
   }
