@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { CoachesInfoPage } from '../coaches-info/coaches-info';
-import { MethodLearningPage } from '../method-learning/method-learning'
+import { MethodLearningPage } from '../method-learning/method-learning';
 /**
  * Generated class for the MessageBoardPage page.
  *
@@ -16,6 +16,7 @@ import { MethodLearningPage } from '../method-learning/method-learning'
 })
 export class MessageBoardPage {
   coachesInfoPage = CoachesInfoPage
+  methodLearningPage = MethodLearningPage 
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
