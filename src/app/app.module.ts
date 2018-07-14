@@ -11,7 +11,7 @@ import { CoachesInfoPage } from '../pages/coaches-info/coaches-info';
 import { ComformationPage } from '../pages/comformation/comformation';
 import { ComformationDatePage } from '../pages/comformation-date/comformation-date';
 import { SignUpPage } from '../pages/sign-up/sign-up';
-import { MethodLearningPage } from '../pages/method-learning/method-learning'
+import { MethodLearningPage } from '../pages/method-learning/method-learning';
 @NgModule({
   declarations: [
     MyApp,
@@ -36,7 +36,7 @@ import { MethodLearningPage } from '../pages/method-learning/method-learning'
     ComformationPage,
     ComformationDatePage,
     SignUpPage,
-    MethodLearningPage
+    MethodLearningPage,
   ],
   providers: [
     StatusBar,
