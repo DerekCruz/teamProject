@@ -1,4 +1,4 @@
-<!--
+ <!--
   Generated template for the MessageBoardPage page.
 
   See http://ionicframework.com/docs/components/#navigation for more info on
@@ -6,7 +6,7 @@
 -->
 <ion-header>
 
-  <ion-navbar color="primary">
+  <ion-navbar hideBackButton color="primary">
     <ion-title>Message Board</ion-title>
     <ion-buttons end >
         <button class="button" (click)="changePages()">
@@ -16,7 +16,16 @@
             src="../../assets/imgs/Frame 8.png">
         </button>
        </ion-buttons>
-  </ion-navbar>
+  
+       <ion-buttons start >
+        <button class="button" (click)="ChangePage()">
+            <img
+            height= "30"
+            width="40"
+            src="../../assets/icon/Frame 7.png">
+        </button>
+       </ion-buttons>
+      </ion-navbar>
   
 </ion-header>
 
@@ -28,14 +37,16 @@
 <ion-list>
     <button class="back" (click)="changePage()" >
     <div class="w3-container">
-    
+    <img height="50" width="50" src="../../assets/imgs/luis.png">
      <h3>John Doe </h3>
      <p>Problem: can't be able to put a picture in ionic. </p>
     </div>
   </button>
 
   <button class="back" (click)="changePage()">
+   
 <div Class ="w3-container">
+    <img height="50" width="50" src="../../assets/imgs/derek.png">
 <h3>Connor jack </h3>
 <p>Problem : Can't be able to make design.</p>
 </div>  
@@ -43,6 +54,7 @@
 
 <button class="back" (click)="changePage()">
 <div class="w3-container">
+   <img height=" 50 " width="50" src="../../assets/imgs/cortez.png">
   <h3>Chad Rami</h3>
   <P>Having trouble making plans for my team .</P>
 </div>
