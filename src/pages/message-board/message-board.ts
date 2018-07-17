@@ -28,8 +28,9 @@ export class MessageBoardPage {
      this.navCtrl.push(CoachesInfoPage);
 
    }
-   ChangePage(){
+   goToFolder(){
      this.navCtrl.push(FolderPage);
+     console.log('goToFolder button was clicked')
    }
   
   ionViewDidLoad() {

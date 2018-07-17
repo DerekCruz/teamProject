@@ -13,6 +13,7 @@ import { ComformationDatePage } from '../pages/comformation-date/comformation-da
 import { SignUpPage } from '../pages/sign-up/sign-up';
 import { MethodLearningPage } from '../pages/method-learning/method-learning';
 import { FolderPage } from '../pages/folder/folder';
+
 @NgModule({
   declarations: [
     MyApp,
@@ -23,7 +24,7 @@ import { FolderPage } from '../pages/folder/folder';
     ComformationDatePage,
     SignUpPage,
     MethodLearningPage,
-    FolderPage,
+    FolderPage
   ],
   imports: [
     BrowserModule,
@@ -39,7 +40,7 @@ import { FolderPage } from '../pages/folder/folder';
     ComformationDatePage,
     SignUpPage,
     MethodLearningPage,
-    FolderPage,
+    FolderPage
   ],
   providers: [
     StatusBar,
