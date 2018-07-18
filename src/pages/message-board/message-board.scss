@@ -1,5 +1,5 @@
 page-message-board {
-    
+    @import url('https://fonts.googleapis.com/css?family=Montserrat');
    .w3-container {
         color: white ;
         text-align: left;
@@ -14,8 +14,11 @@ page-message-board {
  }
  .back{
      background : white
- }
 
+ }
+.font{
+    font-family: 'Montserrat', sans-serif;
+}
       
  
 }

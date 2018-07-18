@@ -1,13 +1,20 @@
 page-method-learning {
+    @import url('https://fonts.googleapis.com/css?family=Montserrat');
+
 
     .luiz{
       text-align:center;
       color: white;
+      font-family: 'Montserrat', sans-serif;
+
     }
     .center{
-        margin:25px 100px;
-        border:hidden;
+        margin:-5px 90px 30px ;
+        border:solid ;
         border-radius:50%;
+        color:white;
+                 
+        z-index:1
  
    }
    .border{
@@ -19,8 +26,15 @@ page-method-learning {
        border: hidden;
        background: white;
    }
-   .book{
+   .margin{
        background-color: #5DA2BF;
+       margin:-10px ;
       
    }
+  
+   .buttonClr{
+       background-color: white;
+       margin: 20px 90px;
+   }
+    
 }
