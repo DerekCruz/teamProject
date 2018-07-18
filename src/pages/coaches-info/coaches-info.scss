@@ -1,7 +1,7 @@
 page-coaches-info {
     .border{
         border:hidden;
-        border-radius:25px ;
+        border-radius:50% ;
         margin:25px 100px; 
     }
   .center{
@@ -13,6 +13,11 @@ page-coaches-info {
       border-width:2px;
       margin:50px 130px ;
       width: 30%;
+
+  }
+  .bark{
+      background-color:#5DA2BF;
+      color:white;
 
   }
 }

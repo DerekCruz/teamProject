@@ -1,5 +1,6 @@
 page-comformation {
     .center{
+        border-radius:40%;
         margin:25px 100px;
     }
     .button{
@@ -9,5 +10,10 @@ page-comformation {
         margin:50px 130px ;
         width: 30%;
   
+    }
+    .dog{
+        background-color:#5DA2BF;
+        color:white;
+       
     }
 }

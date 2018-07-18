@@ -2,11 +2,12 @@ page-method-learning {
 
     .luiz{
       text-align:center;
+      color: white;
     }
     .center{
         margin:25px 100px;
         border:hidden;
-        border-radius:25px;
+        border-radius:50%;
  
    }
    .border{
@@ -17,5 +18,9 @@ page-method-learning {
    .button{
        border: hidden;
        background: white;
+   }
+   .book{
+       background-color: #5DA2BF;
+      
    }
 }
