@@ -3,6 +3,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { CoachesInfoPage } from '../coaches-info/coaches-info';
 import { MethodLearningPage } from '../method-learning/method-learning';
 import { FolderPage } from '../folder/folder'
+import { HomePage } from '../home/home'
 /**
  * Generated class for the MessageBoardPage page.
  *
@@ -19,6 +20,8 @@ export class MessageBoardPage {
   coachesInfoPage = CoachesInfoPage
   methodLearningPage = MethodLearningPage 
   folderPage = FolderPage 
+  homePage = HomePage 
+  
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
    changePages(){
@@ -30,7 +33,9 @@ export class MessageBoardPage {
    }
    goToFolder(){
      this.navCtrl.push(FolderPage);
-     console.log('goToFolder button was clicked')
+   }
+   goToHome(){
+     this.navCtrl.push(HomePage);
    }
   
   ionViewDidLoad() {

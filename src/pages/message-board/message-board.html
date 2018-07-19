@@ -7,24 +7,25 @@
 <ion-header>
 
   <ion-navbar hideBackButton color="dark">
-    <ion-title>Message Board</ion-title>
+        <ion-buttons>
+                <button class="button" (click)="goToFolder()">
+                    <img
+                    height= "30"
+                    width="40"
+                    src="../../assets/icon/Frame 7.png">
+                </button>
+               </ion-buttons>
+    <ion-title></ion-title>
     <ion-buttons end >
-        <button class="button" (click)="changePages()">
+        <button class="button" (click)="goToHome()">
             <img
-            height= "30"
-            width="30"
-            src="../../assets/imgs/Frame 8.png">
+            height= "20"
+            width="60"
+            src="../../assets/icon/Logout.png">
         </button>
        </ion-buttons>
   
-       <ion-buttons>
-        <button class="button" (click)="goToFolder()">
-            <img
-            height= "30"
-            width="40"
-            src="../../assets/icon/Frame 7.png">
-        </button>
-       </ion-buttons>
+      
       </ion-navbar>
   
 </ion-header>
@@ -69,7 +70,18 @@
 <ion-footer>
 
     <ion-navbar color="dark">
-      <ion-title> </ion-title>
+
+        <ion-title>
+        <ion-buttons center >
+            <button class="button" (click)="changePages()">
+                <img
+                height= "30"
+                width="30"
+                src="../../assets/imgs/Frame 8.png">
+            </button>
+           </ion-buttons>
+           </ion-title>
+
     </ion-navbar>
 
     </ion-footer>
