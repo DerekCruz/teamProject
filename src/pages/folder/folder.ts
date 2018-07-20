@@ -22,4 +22,8 @@ export class FolderPage {
     console.log('ionViewDidLoad FolderPage');
   }
 
+  goBack() {
+    this.navCtrl.pop();
+  }
+
 }

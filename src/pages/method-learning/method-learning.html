@@ -4,21 +4,27 @@
   See http://ionicframework.com/docs/components/#navigation for more info on
   Ionic pages and navigation.
 -->
-<ion-header >
-  <ion-navbar  color="dark">
-    <ion-title></ion-title>
+<ion-header>
+  <ion-navbar style="padding:15px;" hideBackButton color="dark">
+          <button class="button" (click)="goBack()">
+            <img height="30" width="40" src="../../assets/icon/backArrow.png">
+          </button>
+    <ion-title color="dark">
+      <img style="height:39px;margin-left:-8px" src="../../assets/icon/zoomWhite.svg" alt="">
+    </ion-title>
   </ion-navbar>
 </ion-header>
 
 
-<ion-content >
- 
-    <div class="margin">
-  <h2 class="luiz">Chad Rami</h2>
-  
-  <img  class="center" height="200" width="200" src="../../assets/imgs/luis-cortez.jpg">
- </div>
-  <ion-item>
+<ion-content>
+
+  <div class="margin">
+    <h2 class="luiz">Chad Rami</h2>
+
+    <img class="center" height="200" width="200" src="../../assets/imgs/luis-cortez.jpg">
+  </div>
+  <!-- GIVES SELECTION MENU -->
+  <!-- <ion-item>
         <ion-label stacked class="font">Method Learning</ion-label>
         <ion-select  multiple="true">
           <ion-option> Pictures </ion-option>
@@ -28,26 +34,23 @@
           <ion-option> Help from peers </ion-option>
           <ion-option> Online research </ion-option>
         </ion-select>
-    </ion-item>
+    </ion-item> -->
 
-    <ion-item>
-      <ion-label stacked class="font"> What is your problem?</ion-label>
-      <ion-input type="text" >  </ion-input>
-    </ion-item>
-    <button class="button"> 
-    <img class="buttonClr"
-         height="70"
-          width="180" src="../../assets/icon/Frame 10.png">  
-  </button>
-  
-    
+    <form [formGroup]="problemForm" (ngSubmit)="logForm()">
+      <ion-item>
+        <ion-label stacked class="font"> What is your problem?</ion-label>
+        <ion-input type="text" formControlName="problem"></ion-input>
+      </ion-item>
+      
+      <button type="submit" class="button">
+        <img class="buttonClr" height="70" width="180" src="../../assets/icon/Frame 10.png">
+      </button>
+    </form>
+
+
+  <!-- <button class="button">
+    <img class="buttonClr" height="70" width="180" src="../../assets/icon/Frame 10.png">
+  </button> -->
+
+
 </ion-content>
-
-
-<ion-footer>
-
-    <ion-navbar color="dark">
-      <ion-title> </ion-title>
-    </ion-navbar>
-
-    </ion-footer>

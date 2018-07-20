@@ -24,7 +24,7 @@ export class MessageBoardPage {
   
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
-   changePages(){
+   addProblem(){
      this.navCtrl.push(MethodLearningPage);
    }
    changePage(){
@@ -34,9 +34,8 @@ export class MessageBoardPage {
    goToFolder(){
      this.navCtrl.push(FolderPage);
    }
-   goToHome(){
-     this.navCtrl.push(HomePage);
-   }
+   logout(){
+    this.navCtrl.pop();   }
   
   ionViewDidLoad() {
     console.log('ionViewDidLoad MessageBoardPage');

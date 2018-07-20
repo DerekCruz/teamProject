@@ -1,4 +1,4 @@
- <!--
+<!--
   Generated template for the MessageBoardPage page.
 
   See http://ionicframework.com/docs/components/#navigation for more info on
@@ -7,81 +7,71 @@
 <ion-header>
 
   <ion-navbar hideBackButton color="dark">
-        <ion-buttons>
-                <button class="button" (click)="goToFolder()">
-                    <img
-                    height= "30"
-                    width="40"
-                    src="../../assets/icon/Frame 7.png">
-                </button>
-               </ion-buttons>
+    <ion-buttons>
+      <button class="button" (click)="goToFolder()">
+        <img height="30" width="40" src="../../assets/icon/folder.png">
+      </button>
+    </ion-buttons>
     <ion-title></ion-title>
-    <ion-buttons end >
-        <button class="button" (click)="goToHome()">
-            <img
-            height= "20"
-            width="60"
-            src="../../assets/icon/Logout.png">
-        </button>
-       </ion-buttons>
-  
-      
-      </ion-navbar>
-  
+    <ion-buttons end>
+      <button class="button" (click)="logout()">
+        <img height="20" width="60" src="../../assets/icon/Logout.png">
+      </button>
+    </ion-buttons>
+
+
+  </ion-navbar>
+
 </ion-header>
 
 
-<ion-content padding> 
-   
- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<ion-content padding>
 
-<ion-list>
-    <button class="back" (click)="changePage()" >
-    <div class="w3-container">
-    <img height="50" width="50" src="../../assets/imgs/luis.png">
-     <h3>John Doe </h3>
-     <p>Problem: can't be able to put a picture in ionic. </p>
-    </div>
-  </button>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
-  <button class="back" (click)="changePage()">
-   
-<div Class ="w3-container">
-    <img height="50" width="50" src="../../assets/imgs/derek.png">
-<h3>Connor jack </h3>
-<p>Problem : Can't be able to make design.</p>
-</div>  
-</button>
+  <ion-list>
+    <button class="back" (click)="changePage()">
+      <div class="problem-container">
+        <img class="userAvicon" src="../../assets/imgs/luis.png">
+        <p class="problem-title" >  Problem </p>
+        <img class="progressBar" src="../../assets/icon/redBar.png">
 
-<button class="back" (click)="changePage()">
-<div class="w3-container">
-   <img height=" 50 " width="50" src="../../assets/imgs/cortez.png">
-  <h3>Chad Rami</h3>
-  <P>Having trouble making plans for my team .</P>
-</div>
-</button>
+        <p class="problem-description">can't be able to put a picture in ionic. </p>
+      </div>
+    </button>
 
-</ion-list>
+    <hr>
 
- 
- 
+    <button class="back" (click)="changePage()">
+
+      <div class="problem-container">
+        <img class="userAvicon"src="../../assets/imgs/derek.png">
+        <p class="problem-title" > Problem</p> 
+        <img class="progressBar" src="../../assets/icon/yellowBar.png">
+        <p class="problem-description" >Can't be able to make design</p>
+      
+    </div>     
+    </button>
+
+    <hr>
+
+    <button class="back" (click)="changePage()">
+      <div class="problem-container">
+        <img class="userAvicon"  src="../../assets/imgs/cortez.png">
+        <p class="problem-title" >Problem</p>
+        <img class="progressBar" src="../../assets/icon/redBar.png">
+        <p class="problem-description" >Having trouble making plans for my team</p>
+      </div>
+    </button>
+
+    <hr>
+
+  </ion-list>
+
+  <ion-fab>
+    <button (click)="addProblem()" id="plusButton" ion-fab color="dark">
+      <img  height=95% width=106% src="../../assets/icon/addButton.png">
+    </button>
+  </ion-fab>
+
 </ion-content>
-
-<ion-footer>
-
-    <ion-navbar color="dark">
-
-        <ion-title>
-        <ion-buttons center >
-            <button class="button" (click)="changePages()">
-                <img
-                height= "30"
-                width="30"
-                src="../../assets/imgs/Frame 8.png">
-            </button>
-           </ion-buttons>
-           </ion-title>
-
-    </ion-navbar>
-
-    </ion-footer>

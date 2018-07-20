@@ -1,25 +1,52 @@
 page-message-board {
-    @import url('https://fonts.googleapis.com/css?family=Montserrat');
-   .w3-container {
-        color: white ;
-        text-align: left;
-        border: hidden; 
-        background : #5DA2BF ;
-        border-radius : 25px ;
-        margin: 25px 3px;
-    }
- .button{
-     background : #444444
-     
- }
- .back{
-     background : white
-
- }
-.font{
+  @import url('https://fonts.googleapis.com/css?family=Montserrat');
+  .problem-container {
+    color: white;
+    text-align: left;
+    border: hidden;
+    background: #5DA2BF;
+    border-radius: 25px;
+    margin: -2px 1px;
     font-family: 'Montserrat', sans-serif;
+  }
+  .userAvicon {
+    height: 65px;
+    width: 19%;
+    margin-left: -2%;
+    border-radius: 98px;
+    margin-top: -2%;
+    border: solid;
+    border-width: 3px;
+    background: red;
+    background-size: 2px;
+  }
+  .progressBar {
+    margin-left: 23ex;
+    margin-bottom: -37px;
+    width: 64px;
+    height: 25px;
+  }
+  .problem-title {
+    margin: -52px;
+    margin-left: 117px;
+    position: absolute;
+  }
+  .problem-description {
+    margin-left: 60px;
+    margin-top: -55px;
+    padding-bottom: 13px;
+  }
+  .button {
+    background: #444444
+  }
+  .back {
+    background: white
+  }
+  #plusButton {
+    margin-left: 210%;
+    margin-top: 72ex;
+    height: 70px;
+    width: 70px;
+  }
 
-}
-
- 
 }

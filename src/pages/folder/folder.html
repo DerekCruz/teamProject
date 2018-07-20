@@ -4,29 +4,33 @@
   See http://ionicframework.com/docs/components/#navigation for more info on
   Ionic pages and navigation.
 -->
-<ion-header class="dog">
+<ion-header>
+    <ion-navbar style="padding:15px;" hideBackButton color="dark">
+            <button class="button" (click)="goBack()">
+              <img height="30" width="40" src="../../assets/icon/backArrow.png">
+            </button>
+      <ion-title color="dark">
+        <img style="height:39px;margin-left:-8px" src="../../assets/icon/zoomWhite.svg" alt="">
+      </ion-title>
+    </ion-navbar>
+  </ion-header>
 
-  <ion-navbar color="dark">
-  </ion-navbar>  
-  <ion-title> Saved  </ion-title>
-</ion-header>
-
-
+margin-left:100px;
 <ion-content padding>
   <ion-list>
-      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-      <hr>
-      <div class="w3-container">
-          <img height=" 50 " width="50" src="../../assets/imgs/cortez.png">
-         <h3>Chad Rami</h3>
-         <P>Problem: Having trouble making plans for my team .</P>
-       </div>
-       <hr>
+    <p id="title" style=" display: flex; justify-content: center; color: #5DA2BF; font-size: 20px" >Saved Problems</p>
+    <hr>
+      <button class="back" (click)="changePage()">
+          <div class="problem-container">
+            <img class="userAvicon" src="../../assets/imgs/cortez.png">
+            <p class="problem-title" >  Problem </p>
+            <img class="progressBar" src="../../assets/icon/yellowBar.png">
+    
+            <p class="problem-description">can't be able to put a picture in ionic. </p>
+          </div>
+        </button>
+        <hr>
        
   </ion-list>
 
 </ion-content>
-<ion-footer >
-<ion-navbar color="dark">
-</ion-navbar>
-</ion-footer>

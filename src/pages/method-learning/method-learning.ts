@@ -1,13 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-//import {Validators, FormBuilder, FormGroup } from '@angular/forms';
+import { Validators, FormBuilder, FormGroup } from '@angular/forms';
 
-/**
- * Generated class for the MethodLearningPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+
 
 
 @IonicPage()
@@ -16,11 +11,22 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'method-learning.html',
 })
 export class MethodLearningPage {
+  private problemForm : FormGroup;
  
   
 
-  constructor(public navCtrl: NavController, public navParams: NavParams,) {
-    
+  constructor( private formBuilder: FormBuilder, public navCtrl: NavController, public navParams: NavParams,) {
+    this.problemForm = this.formBuilder.group({
+      problem: ['', Validators.required],
+    });
+  }
+
+  goBack() {
+    this.navCtrl.pop();
+  }
+
+  logForm() {
+    console.log(this.problemForm.value)
   }
  
   ionViewDidLoad() {
