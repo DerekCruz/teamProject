@@ -1,8 +1,11 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { Validators, FormBuilder, FormGroup } from '@angular/forms';
+import { HttpClient } from '@angular/common/http';
+import { NgForm, NgModel } from '@angular/forms';
 
-
+class NewForm {
+  problem: String
+}
 
 
 @IonicPage()
@@ -11,22 +14,31 @@ import { Validators, FormBuilder, FormGroup } from '@angular/forms';
   templateUrl: 'method-learning.html',
 })
 export class MethodLearningPage {
-  private problemForm : FormGroup;
+  public newForm : NewForm;
  
   
 
-  constructor( private formBuilder: FormBuilder, public navCtrl: NavController, public navParams: NavParams,) {
-    this.problemForm = this.formBuilder.group({
-      problem: ['', Validators.required],
-    });
+  constructor( private http: HttpClient, public navCtrl: NavController, public navParams: NavParams,) {
+   this.newForm = new NewForm();
   }
+
+  
 
   goBack() {
     this.navCtrl.pop();
   }
 
   logForm() {
-    console.log(this.problemForm.value)
+    console.log(this.newForm)
+    this.http.post('http://localhost:8080/postProblem', this.newForm)
+    .subscribe(
+      result => {
+        console.log(result);
+        alert('Message Sent!')
+      },
+      err => {
+        console.log(err)
+      });
   }
  
   ionViewDidLoad() {

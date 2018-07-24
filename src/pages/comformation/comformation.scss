@@ -1,18 +1,19 @@
 page-comformation {     @import url('https://fonts.googleapis.com/css?family=Montserrat');
     .center{
-        border:solid;
-        border-width:4px;
-        border-color:white;
-        border-radius:50%;
-        margin:25px 80px;
+        border: solid;
+        border-width:8px;
+        border-radius : 50%;
+        margin-left: -3px;
     }
     .button{
-        border:solid;
-        border-radius:25px;
-        border-width:2px;
-        margin:50px 130px ;
-        width: 30%;
-  
+        margin: 23px 25px;
+        width: 306px;
+        background: white;
+    }
+
+    .backButton {
+        border: hidden;
+        background: #444444;
     }
     .move{
         background-color:#5DA2BF;
@@ -32,32 +33,35 @@ page-comformation {     @import url('https://fonts.googleapis.com/css?family=Mon
     }
    .font{
     font-family: 'Montserrat', sans-serif;
+    padding: 6px;
 
    }
    .under{
        text-decoration : underline;
-       margin-left: 40px;
+       margin-left: 33px;
        margin-bottom: 10px;
    }
    .Textm{
-       margin-left: 30px;
+       margin-left: 14px;
        margin-top: -10px;
        
    }
    .on{
       text-align: center;
       text-decoration: underline;
-      margin-top:-120px; 
+      margin-top:-116px; 
+      margin-left: -14px;
    }
    .skype{
        text-align:center;
        margin-top:-19px;
+       margin-left:-12px;
    }
    .at{
-       text-align:right;
-       margin-right: 60px;
-       margin-top: -116px;
-       text-decoration: underline;
+    text-align: right;
+    margin-right: 61px;
+    margin-top: -113px;
+    text-decoration: underline;
    }
    .time{
        text-align:right;
@@ -66,15 +70,20 @@ page-comformation {     @import url('https://fonts.googleapis.com/css?family=Mon
    }
    .picM{
        
-       margin-left: 160px;
+       margin-left: 164px;
    }
    .people{
-       margin-left:50px;
-       margin-top: -20px;
-
-
+    margin-left: 38px;
+    margin-top: -7px;
+    height: 34px;
    }
    .clock{
-       margin-left: 270px;
+       margin-left: 284px;
+       margin-top:-15px
+   }
+
+   .container1 {
+       display: flex;
+       justify-content: flex-start
    }
 }

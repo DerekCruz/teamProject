@@ -22,4 +22,8 @@ export class ComformationDatePage {
     console.log('ionViewDidLoad ComformationDatePage');
   }
 
+  goBack() {
+    this.navCtrl.pop();
+  }
+
 }

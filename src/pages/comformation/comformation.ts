@@ -23,4 +23,8 @@ export class ComformationPage {
     console.log('ionViewDidLoad ComformationPage');
   }
 
+  goBack() {
+    this.navCtrl.pop();
+  }
+
 }

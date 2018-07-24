@@ -4,22 +4,23 @@ page-coaches-info {    @import url('https://fonts.googleapis.com/css?family=Mont
         border: solid;
         border-width:8px;
         border-radius : 50%;
-        margin:25px 85px;
- 
+        margin-left: 97px;
     }
   .center{
       text-align:center;
       font-family: 'Montserrat', sans-serif;
 
   }
-  .button{
-      border:solid;
-      border-radius:25px;
-      border-width:2px;
-      margin:50px 130px;
-      width: 30%;
+.backButton {
+    border: hidden;
+    background: #444444;
+}
 
+  .button{
+      margin: 30px 83px;
+      background: white;
   }
+
   .bark{
       background-color:#5DA2BF;
       color:white;
@@ -29,7 +30,18 @@ page-coaches-info {    @import url('https://fonts.googleapis.com/css?family=Mont
   p{
       text-align:center;
       font-family: 'Montserrat', sans-serif;
+      font-size: 18px;
+      margin: -12px;
+      margin-top: 19px;
 
 
   }
+
+  #joinButton {
+    position: absolute;
+    color: white;
+    font-size: 38px;
+    margin-left: 58px;
+    margin-top: 0px;
+ }
 }

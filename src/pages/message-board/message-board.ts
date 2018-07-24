@@ -1,28 +1,26 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { CoachesInfoPage } from '../coaches-info/coaches-info';
 import { MethodLearningPage } from '../method-learning/method-learning';
 import { FolderPage } from '../folder/folder'
 import { HomePage } from '../home/home'
-/**
- * Generated class for the MessageBoardPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+import { HttpClient } from '@angular/common/http';
+
+
 
 @IonicPage()
 @Component({
   selector: 'page-message-board',
   templateUrl: 'message-board.html',
 })
-export class MessageBoardPage {
+export class MessageBoardPage implements OnInit {
   coachesInfoPage = CoachesInfoPage
   methodLearningPage = MethodLearningPage 
   folderPage = FolderPage 
   homePage = HomePage 
+  public problems: any = [];
   
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(private http: HttpClient, public navCtrl: NavController, public navParams: NavParams) {
   }
    addProblem(){
      this.navCtrl.push(MethodLearningPage);
@@ -35,10 +33,28 @@ export class MessageBoardPage {
      this.navCtrl.push(FolderPage);
    }
    logout(){
-    this.navCtrl.pop();   }
+    this.navCtrl.pop();  
+   }
   
   ionViewDidLoad() {
     console.log('ionViewDidLoad MessageBoardPage');
+    this.http.get('http://localhost:8080/pullProblem').subscribe(response => {
+           console.log(response);
+           this.problems = response;
+       },
+       err => {
+         console.log('err');
+       });
+  }
+
+  ngOnInit() {
+    this.http.get('http://localhost:8080/pullProblem').subscribe(response => {
+           console.log(response);
+           this.problems = response;
+       },
+       err => {
+         console.log('err');
+       });
   }
 
 }

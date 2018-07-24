@@ -5,6 +5,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
+// PAGES
 import { HomePage } from '../pages/home/home';
 import { MessageBoardPage } from '../pages/message-board/message-board';
 import { CoachesInfoPage } from '../pages/coaches-info/coaches-info';
@@ -13,6 +14,11 @@ import { ComformationDatePage } from '../pages/comformation-date/comformation-da
 import { SignUpPage } from '../pages/sign-up/sign-up';
 import { MethodLearningPage } from '../pages/method-learning/method-learning';
 import { FolderPage } from '../pages/folder/folder';
+
+//DEPENDENCIES
+import { HttpClientModule } from '@angular/common/http';
+
+import { FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -28,7 +34,9 @@ import { FolderPage } from '../pages/folder/folder';
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    HttpClientModule,
+    FormsModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [

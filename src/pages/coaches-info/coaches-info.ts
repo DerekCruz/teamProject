@@ -24,4 +24,9 @@ export class CoachesInfoPage {
     console.log('ionViewDidLoad CoachesInfoPage');
   }
 
+  goBack() {
+    console.log('button was clicked')
+    this.navCtrl.pop();
+  }
+
 }

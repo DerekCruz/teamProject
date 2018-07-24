@@ -5,8 +5,13 @@
   Ionic pages and navigation.
 -->
 <ion-header>
-  <ion-navbar color="dark" >
-    
+  <ion-navbar style="padding:12px;" hideBackButton color="dark" >
+    <button class="backButton" (click)="goBack()">
+      <img height=36px width="40" src="../../assets/icon/backArrow.png">
+    </button>
+    <ion-title color="dark">
+      <img style="height:46px;margin-left:-8px" src="../../assets/icon/zoomWhite.svg" alt="Zoom">
+    </ion-title>
   </ion-navbar>
 </ion-header>
 
@@ -15,16 +20,23 @@
 <ion-list>
   <div class="bark">
   <h2 class="center ">Chad Rami </h2>
+  
   <img class="border" height="190" width="190" src="../../assets/imgs/luis-cortez.jpg">
-  <p>3 others are having the same problem.</p>
+ 
 
 
-  <p>Problem: I'm having trouble making plans for my team</p>
+  <p>Problem: <br> I'm having trouble making plans for my team</p>
+
+   <p>3 others are having the same problem.</p>
+  
   <hr>
 </div>
 
 </ion-list>
 <p>Prefered Method: Visual and Text </p>
 
-<button class="button" [navPush]="comformationPage"> Join</button>
+<button class="button" [navPush]="comformationPage">
+  <p id="joinButton" > Join</p>
+  <img src="../../assets/icon/blueBar.png" alt="Join">
+</button>
 </ion-content>

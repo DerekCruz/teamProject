@@ -6,16 +6,18 @@
 -->
 <ion-header>
 
-  <ion-navbar hideBackButton color="dark">
+  <ion-navbar style="padding-bottom: 7px;" hideBackButton color="dark">
     <ion-buttons>
       <button class="button" (click)="goToFolder()">
         <img height="30" width="40" src="../../assets/icon/folder.png">
       </button>
     </ion-buttons>
-    <ion-title></ion-title>
+    <ion-title>
+        <img style="height:48px;margin-left:-8px;margin-top:3px" src="../../assets/icon/zoomWhite.svg" alt="Zoom">
+    </ion-title>
     <ion-buttons end>
       <button class="button" (click)="logout()">
-        <img height="20" width="60" src="../../assets/icon/Logout.png">
+        <img height=30px width=70px src="../../assets/icon/Logout.png">
       </button>
     </ion-buttons>
 
@@ -36,7 +38,8 @@
         <p class="problem-title" >  Problem </p>
         <img class="progressBar" src="../../assets/icon/redBar.png">
 
-        <p class="problem-description">can't be able to put a picture in ionic. </p>
+        <p class="problem-description"  > 
+          I dont know how to add a page in ionic </p>
       </div>
     </button>
 
@@ -55,22 +58,22 @@
 
     <hr>
 
-    <button class="back" (click)="changePage()">
+    <button *ngIf="problems.length > 0" class="back" (click)="changePage()">
       <div class="problem-container">
         <img class="userAvicon"  src="../../assets/imgs/cortez.png">
         <p class="problem-title" >Problem</p>
         <img class="progressBar" src="../../assets/icon/redBar.png">
-        <p class="problem-description" >Having trouble making plans for my team</p>
+        <p *ngFor = 'let problem of problems' class="problem-description" >{{problem.problem}}</p>
       </div>
     </button>
-
+    <!-- Having trouble making plans for my team -->
     <hr>
 
   </ion-list>
 
   <ion-fab>
     <button (click)="addProblem()" id="plusButton" ion-fab color="dark">
-      <img  height=95% width=106% src="../../assets/icon/addButton.png">
+      <img  height=95% width=106% src="../../assets/icon/plusButton.png">
     </button>
   </ion-fab>
 
