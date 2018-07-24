@@ -6,13 +6,13 @@
 -->
 <ion-header>
 
-  <ion-navbar style="padding-bottom: 7px;" hideBackButton color="dark">
+  <ion-navbar  hideBackButton color="dark">
 
-      <ion-buttons>
-          <button class="folder" (click)="goToFolder()">
-            <img height="40" width="50" src="../../assets/icon/folder.png">
-          </button>
-        </ion-buttons>
+    <ion-buttons>
+      <button class="folder" (click)="goToFolder()">
+        <img height="40" width="50" src="../../assets/icon/folder.png">
+      </button>
+    </ion-buttons>
     <img style="height:48px;margin-left:45%;margin-top:-30px" src="../../assets/icon/Frame.png" alt="Zoom">
 
     <ion-buttons end>
@@ -60,7 +60,7 @@
       <div *ngFor = 'let problem of problems' class="problem-container">
         <img class="userAvicon"  src="../../assets/imgs/cortez.png">
         <p class="problem-title" >Problem</p>
-        <img class="progressBar" src="../../assets/icon/redBar.png">
+        <img class="progressBarLuiz" src="../../assets/icon/redBar.png">
         <p  class="problem-description" >{{problem.problem}}</p>
       </div>
     </button>
