@@ -8,10 +8,14 @@ import { SignUpPage } from '../sign-up/sign-up';
 })
 export class HomePage {
   messageBoardPage = MessageBoardPage;
-signUpPage = SignUpPage
+   signUpPage = SignUpPage;
+    splash= true ;
+    
 
   constructor(public navCtrl: NavController ) {
 
   }
-
+ ionViewDidLoad(){
+   setTimeout(() => this.splash = false,4000);
+ }
 }
