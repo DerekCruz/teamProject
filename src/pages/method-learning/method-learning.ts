@@ -26,11 +26,12 @@ export class MethodLearningPage {
 
   goBack() {
     this.navCtrl.pop();
+    
   }
 
   logForm() {
     console.log(this.newForm)
-    this.http.post('http://localhost:8080/postProblem', this.newForm)
+    this.http.post('https://zoom-server.herokuapp.com/postProblem', this.newForm)
     .subscribe(
       result => {
         console.log(result);

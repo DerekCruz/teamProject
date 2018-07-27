@@ -38,7 +38,7 @@ export class MessageBoardPage implements OnInit {
   
   ionViewDidLoad() {
     console.log('ionViewDidLoad MessageBoardPage');
-    this.http.get('http://localhost:8080/pullProblem').subscribe(response => {
+    this.http.get('https://zoom-server.herokuapp.com/pullProblem').subscribe(response => {
            console.log(response);
            this.problems = response;
        },
@@ -48,7 +48,7 @@ export class MessageBoardPage implements OnInit {
   }
 
   ngOnInit() {
-    this.http.get('http://localhost:8080/pullProblem').subscribe(response => {
+    this.http.get('https://zoom-server.herokuapp.com/pullProblem').subscribe(response => {
            console.log(response);
            this.problems = response;
        },
