@@ -6,20 +6,20 @@
 -->
 <ion-header>
 
-  <ion-navbar  hideBackButton color="dark">
+  <ion-navbar hideBackButton color="dark">
 
     <ion-buttons>
       <button class="folder" (click)="goToFolder()">
         <img height="40" width="50" src="assets/icon/folder.png">
       </button>
     </ion-buttons>
-    <img style="height:48px;margin-left:45%;margin-top:-1px" src="assets/icon/Frame.png" alt="Zoom">
 
     <ion-buttons end>
       <button class="button" (click)="logout()">
         <img height=20px width=70px src="assets/icon/Logout.png">
       </button>
     </ion-buttons>
+    <img style="height:50px;margin-left:45%;margin-top:-2px" src="assets/icon/Frame.png" alt="Zoom">
 
 
   </ion-navbar>
@@ -34,16 +34,16 @@
   <ion-list>
     <button class="back" (click)="changePage()">
       <div class="problem-container">
-        <img class="userAvicon" src="../../assets/imgs/luis.png">
-        <p class="problem-title" >  Problem </p>
+        <img class="userAvicon" src="assets/imgs/luis.png">
+        <p class="problem-title"> Problem </p>
         <img class="progressBar" src="assets/icon/redBar.png">
 
-        <p class="problem-description"  > 
+        <p class="problem-description">
           I dont know how to add a page in ionic </p>
       </div>
     </button>
 
-    <hr>
+    <hr style="border: 0; border-top: 1px solid #eee; margin: 0px 0;">
 
     <!-- <button class="back" (click)="changePage()">
 
@@ -57,21 +57,20 @@
     </button> -->
 
     <button *ngIf="problems.length > 0" class="back" (click)="changePage()">
-      <div *ngFor = 'let problem of problems' class="problem-container">
-        <img class="userAvicon"  src="../../assets/imgs/cortez.png">
-        <p class="problem-title" >Problem</p>
+      <div *ngFor='let problem of problems' class="problem-container">
+        <img class="userAvicon" src="assets/imgs/cortez.png">
+        <p class="problem-title">Problem</p>
         <img class="progressBarLuiz" src="assets/icon/redBar.png">
-        <p  class="problem-description" >{{problem.problem}}</p>
+        <p class="problem-description">{{problem.problem}}</p>
       </div>
     </button>
     <!-- Having trouble making plans for my team -->
-    <hr>
 
   </ion-list>
 
   <ion-fab>
     <button (click)="addProblem()" id="plusButton" ion-fab color="dark">
-      <img  height=95% width=106% src="assets/icon/plusButton.png">
+      <img height=95% width=106% src="assets/icon/plusButton.png">
     </button>
   </ion-fab>
 
