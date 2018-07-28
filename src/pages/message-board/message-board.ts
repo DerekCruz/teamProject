@@ -15,46 +15,57 @@ import { HttpClient } from '@angular/common/http';
 })
 export class MessageBoardPage implements OnInit {
   coachesInfoPage = CoachesInfoPage
-  methodLearningPage = MethodLearningPage 
-  folderPage = FolderPage 
-  homePage = HomePage 
+  methodLearningPage = MethodLearningPage
+  folderPage = FolderPage
+  homePage = HomePage
   public problems: any = [];
-  
+
+
   constructor(private http: HttpClient, public navCtrl: NavController, public navParams: NavParams) {
   }
-   addProblem(){
-     this.navCtrl.push(MethodLearningPage);
-   }
-   changePage(){
-     this.navCtrl.push(CoachesInfoPage);
+  addProblem() {
+    this.navCtrl.push(MethodLearningPage);
+  }
+  changePage() {
+    this.navCtrl.push(CoachesInfoPage);
 
-   }
-   goToFolder(){
-     this.navCtrl.push(FolderPage);
-   }
-   logout(){
-    this.navCtrl.pop();  
-   }
-  
+  }
+  goToFolder() {
+    this.navCtrl.push(FolderPage);
+  }
+  logout() {
+    this.navCtrl.pop();
+  }
+
   ionViewDidLoad() {
     console.log('ionViewDidLoad MessageBoardPage');
     this.http.get('https://zoom-server.herokuapp.com/pullProblem').subscribe(response => {
-           console.log(response);
-           this.problems = response;
-       },
-       err => {
-         console.log('err');
-       });
+      console.log(response);
+      this.problems = response;
+    },
+      err => {
+        console.log('err');
+      });
+  }
+  ionViewWillEnter() {
+    this.http.get('https://zoom-server.herokuapp.com/pullProblem').subscribe(response => {
+      console.log(response);
+      this.problems = response;
+    },
+      err => {
+        console.log('err');
+      });
   }
 
   ngOnInit() {
     this.http.get('https://zoom-server.herokuapp.com/pullProblem').subscribe(response => {
-           console.log(response);
-           this.problems = response;
-       },
-       err => {
-         console.log('err');
-       });
+      console.log(response);
+      this.problems = response;
+    },
+      err => {
+        console.log('err');
+      });
   }
+
 
 }
