@@ -45,20 +45,19 @@ page-message-board {
     border-radius: 6px;
     position: relative;
     top: 5px;
-    left: 40px;
+    left: 24px;
     font-size: 18px;
     text-align: center;
     height: 26px;
     width: 173px;
   }
   .user-image{
-    border-radius: 42px;
+    border-radius: 50%;
     position: relative;
-    height: 60%;
-    width: 100%;
-    border: solid;
-    margin-left: -15%;
-    margin-top: -11%;
+    height: 61px;
+    width: 57px;
+    margin-left: -9%;
+    margin-top: -7%;
   }
   .user-image:after{
     content: '';
@@ -79,9 +78,30 @@ page-message-board {
     margin-top: -9px;
     margin-left: -12px;
     border-color: #5DA2BF;
-    border-radius: 50px;
+    border-radius: 50%;
   }
+  .position{
+    position: absolute;
+    top: 42px;
+    left: 288px;
 
+  }
+  #plusButton {
+         margin-left: 140px;
+         margin-top: 20ex;
+         height: 70px;
+         width: 70px;
+         background-color:white;
+       }
+   
+       .problem {
+        position: relative;
+        top: -3px;
+        left: 22px;
+        font-size: 16px;
+       
+      }
+   
   
   // OLD CSS // WITH W3 CSS LINK //
   //   .toolbar {

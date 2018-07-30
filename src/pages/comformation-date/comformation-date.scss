@@ -19,7 +19,7 @@ page-comformation-date {
     .move{
         background-color:#5DA2BF;
         color:white;
-        margin-top:-10px;
+        margin-top:-17px;
         text-align:center;
         font-family: 'Montserrat', sans-serif;
 
@@ -30,7 +30,8 @@ page-comformation-date {
     }
     .textM{
         text-align:center;
-        margin-top:12px
+        margin-top:5px;
+        font-size: 20px;
     }
    .font{
     font-family: 'Montserrat', sans-serif;
@@ -50,24 +51,24 @@ page-comformation-date {
    .on{
       text-align: center;
       text-decoration: underline;
-      margin-top:-116px; 
+      margin-top:-80px; 
       margin-left: -14px;
    }
    .skype{
        text-align:center;
-       margin-top:-19px;
+       margin-top:-13px;
        margin-left:-12px;
    }
    .at{
     text-align: right;
-    margin-right: 61px;
-    margin-top: -113px;
+    margin-right: 53px;
+    margin-top: -79px;
     text-decoration: underline;
    }
    .time{
        text-align:right;
        margin-right: 40px;
-       margin-top: -20px;
+       margin-top: -14px;
    }
    .picM{
        
@@ -79,13 +80,15 @@ page-comformation-date {
     height: 34px;
    }
    .clock{
-       margin-left: 284px;
-       margin-top:-15px
+    margin-left: 281px;
+    margin-top: -10px;
    }
 
    .container1 {
        display: flex;
        justify-content: flex-start
    }
-
+   .iconM{
+       margin-bottom: -8px;
+   }
 }

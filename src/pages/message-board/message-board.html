@@ -30,30 +30,21 @@
     </div>
     <div>
       <p class="learning-style" > Pictures and Videos</p>
-      <p class="problem" > I dont know how to add a page in ionic </p>
-      <img  src="assets/icon/redBar.png">
+      <p class="problem" > I dont know how to add <br> a page in ionic </p>
+      <img  class="position" src ="assets/icon/Red.png">
+
     </div>
     
   </div>
 
   <!-- <hr style="border: 0; border-top: 1px solid #eee; margin: 0px 0;"> -->
-
-
-
-  <!-- <button *ngIf="problems.length > 0" class="back" (click)="changePage()">
+   <!--<div *ngIf="problems.length > 0" class="back" (click)="changePage()">
       <div *ngFor='let problem of problems' class="problem-container">
         <img class="userAvicon" src="assets/imgs/cortez.png">
         <p class="problem-title">Problem</p>
-        <img class="progressBarLuiz" src="assets/icon/redBar.png">
+        <img class="progressBarLuiz" >
         <p class="problem-description">{{problem.problem}}</p>
-      </div>
-    </button> -->
-
-
-  <!-- <ion-fab>
-    <button (click)="addProblem()" id="plusButton" ion-fab color="dark">
-      <img height=95% width=106% src="assets/icon/plusButton.png">
-    </button>
-  </ion-fab> -->
-
+       </div>
+    </div>-->   
+      <img (click)="addProblem()" id="plusButton" height="60" width="100" src="assets/icon/BluePlus.png">
 </ion-content>
