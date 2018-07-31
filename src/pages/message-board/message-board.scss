@@ -82,8 +82,8 @@ page-message-board {
   }
   .position{
     position: absolute;
-    top: 42px;
-    left: 288px;
+    top: 34px;
+    left: 287px;
 
   }
   #plusButton {
@@ -114,8 +114,8 @@ page-message-board {
         position: relative;
         height: 61px;
         width: 57px;
-        margin-left: -9%;
-        margin-top: -7%;
+        margin-left: 5%;
+        margin-top: 5%;
     }
     }
     .style{
@@ -134,14 +134,15 @@ page-message-board {
     }
     .problem-description{
       position: relative;
-      top: -46px;
-      left: 137px;
+      top: -32px;
+      left: 1px;
       font-size: 17px;
+      text-align:center;
     }
   .Person{
     position: relative;
     left: 271px;
-    top: -109px;
+    top: 21px;
 }
   
     
