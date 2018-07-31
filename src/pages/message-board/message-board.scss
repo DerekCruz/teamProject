@@ -97,10 +97,55 @@ page-message-board {
        .problem {
         position: relative;
         top: -3px;
-        left: 22px;
+        left: 25px;
         font-size: 16px;
        
       }
+       //Design for the data//
+       .back{
+        background: #5DA2BF;
+        color: white;
+        font-family: 'Quicksand', sans-serif;
+        border-radius: 15px;
+        margin-top:20px;
+      }
+      .user-icon{
+        border-radius: 50%;
+        position: relative;
+        height: 61px;
+        width: 57px;
+        margin-left: -9%;
+        margin-top: -7%;
+    }
+    }
+    .style{
+      background: white;
+      margin: 0;
+      color: black;
+      border-radius: 6px;
+      position: relative;
+      top: -36px;
+      left: 79px;
+      font-size: 18px;
+      text-align: center;
+      height: 26px;
+      width: 173px;
+  
+    }
+    .problem-description{
+      position: relative;
+      top: -46px;
+      left: 137px;
+      font-size: 17px;
+    }
+  .Person{
+    position: relative;
+    left: 271px;
+    top: -109px;
+}
+  
+    
+
    
   
   // OLD CSS // WITH W3 CSS LINK //
@@ -175,4 +220,4 @@ page-message-board {
 // .scroll-content {
 //   padding: 0px !important;
 // }
-}
+

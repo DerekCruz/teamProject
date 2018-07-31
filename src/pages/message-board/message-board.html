@@ -38,13 +38,14 @@
   </div>
 
   <!-- <hr style="border: 0; border-top: 1px solid #eee; margin: 0px 0;"> -->
-   <!--<div *ngIf="problems.length > 0" class="back" (click)="changePage()">
-      <div *ngFor='let problem of problems' class="problem-container">
-        <img class="userAvicon" src="assets/imgs/cortez.png">
-        <p class="problem-title">Problem</p>
-        <img class="progressBarLuiz" >
+   <div  *ngIf="problems.length > 0" class="back" (click)="changePage()">
+      <div *ngFor='let problem of problems' >
+        <img class="user-icon" src="assets/imgs/cortez.png">
+        <p class="style">Visual and Text</p>
         <p class="problem-description">{{problem.problem}}</p>
-       </div>
-    </div>-->   
+        <img class="Person" src="assets/icon/green.png" >
+ 
+      </div>
+    </div>   
       <img (click)="addProblem()" id="plusButton" height="60" width="100" src="assets/icon/BluePlus.png">
 </ion-content>
