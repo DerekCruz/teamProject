@@ -20,6 +20,9 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { FormsModule} from '@angular/forms';
 
+import { LocalNotifications } from '../../node_modules/@ionic-native/local-notifications';
+
+
 @NgModule({
   declarations: [
     MyApp,
@@ -53,6 +56,7 @@ import { FormsModule} from '@angular/forms';
   providers: [
     StatusBar,
     SplashScreen,
+    LocalNotifications,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

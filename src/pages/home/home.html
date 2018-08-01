@@ -14,12 +14,26 @@
 <ion-content padding>
   <img class="move" height="270" width="400" src="assets/icon/zoom.png">
 
-  <p style="text-align: center; color: #8C8C8C; font-size: 20px;" > Accelerated Learning. <br> Zooming Through Work</p>
+  <p style="text-align: center; 
+            color: #8C8C8C; 
+            font-size: 20px;" 
+            > Accelerated Learning. <br> Zooming Through Work</p>
 
   <ion-card-content>
-  <button style="padding: 0px;" [navPush]="messageBoardPage">
-    <img style="background: white;" src="assets/icon/signIn.png" alt="Sign In"> 
-  </button>
+  <button style="padding: 0px;
+                 position:relative; 
+                 left:30px;" 
+                 [navPush]="messageBoardPage">
+   
+                 <img style="background: white;" 
+         
+                 src="assets/icon/sign-in.png" alt="Sign In">
+  
+                </button>
+  <img style="background:white; 
+              position:relative;
+              left:30px;" 
+              src="assets/icon/sign-up.png">
   </ion-card-content>
   
 </ion-content>
