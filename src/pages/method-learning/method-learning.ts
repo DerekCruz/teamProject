@@ -4,7 +4,7 @@ import { HttpClient } from '@angular/common/http';
 
 
 class NewForm {
-  problem: String
+  problem: String = 'I\'m having trouble making plans for my team.'
 }
 
 
