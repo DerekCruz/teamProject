@@ -16,6 +16,7 @@ export class ComformationDatePage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad ComformationDatePage');
   }
+  
 
   goBack() {
     this.navCtrl.pop();
@@ -23,7 +24,7 @@ export class ComformationDatePage {
   time(){
     this.localNotifications.schedule({
       text: 'Your meeting is set',
-      trigger: {at: new Date()},
+      trigger: {at: new Date(new Date().getTime() + 3600)},
       led: 'FF0000',
       sound: null
     });
